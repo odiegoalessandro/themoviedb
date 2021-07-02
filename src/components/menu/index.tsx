@@ -5,13 +5,15 @@ import { Container } from './style'
 export function Menu(){
   return(
     <Container>
-    <ul>
-      <li>
-        <Link href="/">
-          <a><Img src='/icon-short.svg' width={200} height={50} /></a>
-        </Link>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <Link href="/">
+            <a>
+              <Img src='/icon-short.svg' width={200} height={50} />
+            </a>
+          </Link>
+        </li>
+      </ul>
     </Container>
   )
 }

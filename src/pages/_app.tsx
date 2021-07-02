@@ -1,5 +1,6 @@
 import { AppProps } from "next/dist/next-server/lib/router/router"
 import { createGlobalStyle } from "styled-components"
+import { Menu } from '../components/menu'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -40,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Menu />
       <Component {...pageProps} />
       <GlobalStyle/>
     </>

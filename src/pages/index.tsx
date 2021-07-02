@@ -1,5 +1,4 @@
 import { GetServerSideProps } from "next"
-import { Menu } from '../components/menu'
 import { Slide } from "../components/slide"
 import { Catalog } from "../components/catalog"
 import { api } from "../services/api"
@@ -16,7 +15,6 @@ export default function Home(props: any) {
   
   return (
     <>
-      <Menu />
       <Slide trends={trends} />
       <Catalog content={props.contents} />
     </>

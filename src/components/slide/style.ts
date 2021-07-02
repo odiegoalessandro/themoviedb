@@ -15,6 +15,15 @@ export const Image = styled.img`
   width: 100%;
   height: 90vh;
   object-fit: cover;
+  animation: zoom 4s forwards ease-in-out;
+  @keyframes zoom{
+    from{
+      transform: scale(1.2) rotate(4deg);
+    }
+    to{
+      transform: scale(1) rotate(0);
+    }
+  }
 `
 
 export const Container = styled.div`
@@ -60,3 +69,4 @@ export const Overview = styled.p`
     font-size: .8rem;
   }
 `
+
