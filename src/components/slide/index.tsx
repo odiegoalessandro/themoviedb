@@ -14,7 +14,7 @@ export function Slide(props:any){
         {
           props.trends.map((result: any, index: number) => {
             return (
-              <Link href={`/${result.id}`}>
+              <Link href={`/${result.id}`} key={result.id}>
                 <a>
                   <Container className={index === current ? 'slide active' : 'slide'} key={index}>
                     {index === current && (
