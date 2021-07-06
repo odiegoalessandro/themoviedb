@@ -49,7 +49,7 @@ export function Catalog(props:any){
         {
           completed === false && (
             <LoadButton onClick={() => updateMovies()}>
-              Carregar mais
+              Load more
             </LoadButton>
           )
         }
