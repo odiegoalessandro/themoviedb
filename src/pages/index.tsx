@@ -22,8 +22,8 @@ export default function Home(props: any) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data: trends } = await api(`trending/movie/week?api_key=${process.env.API_KEY}&page=1`)
-  const { data: contents } = await api(`movie/popular?api_key=${process.env.API_KEY}&language=en-US&page=1`)
+  const { data: trends } = await api.get(`trending/movie/week?api_key=${process.env.API_KEY}&page=1`)
+  const { data: contents } = await api.get(`movie/popular?api_key=${process.env.API_KEY}&language=en-US&page=1`)
 
   return {
     props: {
